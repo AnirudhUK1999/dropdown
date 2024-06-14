@@ -1,0 +1,46 @@
+.drop-down {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+  width: fit-content;
+  padding: 4px;
+}
+
+.drop-down-title {
+  width: fit-content;
+}
+
+.drop-down-content {
+  width: fit-content;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+h4,
+li,
+ul {
+  width: fit-content;
+}
+
+/* creates a border on hover */
+h4:hover::after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* pseudo element on its own line. */
+  margin: 0 auto; /* center the border. */
+  width: 60%;
+  padding-top: 10px; /* This creates some space between the element and the border. */
+  border-bottom: 2px solid red; /* creates the border*/
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  margin: 0px;
+}
